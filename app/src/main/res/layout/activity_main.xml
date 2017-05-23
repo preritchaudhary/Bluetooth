@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#E1BEE7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true">
+    <!-- this will prevent the smartphone screen to turn off and the app to go on pause -->
+    <!-- opening another app will kill the connection, though -->
+    >
+
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:text="Connect"
+        android:textSize="10dp"
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right">
+    </Button>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/deconnect"
+        android:text="Disconnect"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right">
+    </Button>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logview"
+        android:visibility="invisible"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/et"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:text="Send"
+
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="Reset"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
